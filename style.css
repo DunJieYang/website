@@ -4,28 +4,24 @@ html{
   body{
     margin:0px;
   }
-  .banner{
-    background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/1.png");
+  .background-img{
+    background-attachment: fixed;
     background-size:cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position:70% center;
+  }
+  .banner{
+    background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/1.png");
+    background-position:70% 50%;
     height:100dvh;
     display:flex;
   }
   .banner2{
     background-image:url("img/2.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     height:150dvh;
   }
   .banner3{
     background-image:url("img/3.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     height:150dvh;
   }
@@ -34,6 +30,7 @@ html{
     flex-direction:column;/*物件上下置中*/
     margin:auto 5%;
     width:100%;
+    font-size: 30px;
   }
   .banner-text a{
     color:#F5E9CF;
@@ -52,6 +49,5 @@ html{
   .banner-text p{
     padding-left:10%;
     margin-bottom:10vh;
-    font-size: 30px;
   }
   
