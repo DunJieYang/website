@@ -9,7 +9,7 @@ html{
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position:70% 0vh;
     height:100vh;
     display:flex;
   }
