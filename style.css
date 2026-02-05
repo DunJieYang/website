@@ -38,13 +38,13 @@ html{
   .banner-text a{
     color:#F5E9CF;
     font-size: 20px;
-    border:solid 2px #7DB9B6;
+    border:solid 2px #e98a3c;
     text-decoration: none;
     padding:0.3em 1em;
     margin-left:5%;
   }
   .banner-text h1{
-    border-bottom:solid 2px #7DB9B6;
+    border-bottom:solid 2px #e98a3c;
     font-size: 50px;
     padding-left:5%;
     margin-right:50%;
