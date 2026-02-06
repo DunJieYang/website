@@ -4,26 +4,23 @@ html{
   body{
     margin:0px;
   }
-  .background-img{
-    background-attachment: fixed;
+  .bg-img{
     background-size:cover;
     background-repeat: no-repeat;
+    display:flex;
+    height:100dvh;
   }
   .banner{
     background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/1.jpg");
     background-position:70% 50%;
-    height:100dvh;
-    display:flex;
   }
   .banner2{
-    background-image:url("img/2.jpg");
-    background-position: center;
-    height:150dvh;
+    background-image:linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/2.jpg");
+    background-position: 30% 50%;
   }
   .banner3{
-    background-image:url("img/3.jpg");
-    background-position: center;
-    height:150dvh;
+    background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/3.jpg");
+    background-position: 40% 50%;
   }
   .banner-text{
     color:#F5E9CF;
