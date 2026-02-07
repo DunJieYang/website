@@ -1,5 +1,8 @@
 <html>
   <head>
+        <meta charset="utf-8">
+        <title>第一個簡易網站</title>
+        <!-- RWD 自動抓取裝置寬度 -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- bootstrap導入 css及js -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -11,64 +14,66 @@
                 #banner{
                     background-image:linear-gradient(to top, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/1stphone.jpg");
                 }
-                .banner2{
+                #banner2{
                     background-image:linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/2ndphone.jpg");
                 }
-                .banner3{
+                #banner3{
                     background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/3rdphone.jpg");
                 }
                 #banner .container{
-                    top:10%;
+                    top:30%;
                 }
-                .banner-text h1{
-                    font-size: 3rem;
-                }
-                .banner-text p{
-                    font-size: 2rem;
+                #banner p{
+                    font-size: 1.7rem;
+                    padding-left:15%;
                 }
             }
             @media screen and (max-width:400px){
-                #logo{
-                    font-size:0.7rem;
+                .navbar-brand{
+                    font-size:0.8rem;
                 }
-                #nav-menu{
-                    font-size:0.7rem;
+                .navbar-nav{
+                    font-size:0.8rem;
                 }
-            }
+                #banner h1{
+                    font-size: 2.3rem;
+                }
+                #banner p{
+                    font-size: 1.4rem;
+                }
+            }          
         </style>
-  </head>
-  <body>
-        <div class="sticky-top"> <!--導覽列-->
+    </head>
+    <body>
+        <header class="sticky-top"> <!--導覽列-->
             <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand" id="logo" href="#">LalaFall.Club</a>
+                <div class="container"> <!--導覽列內容-->
+                    <a class="navbar-brand" href="#">回到首頁</a>
                     <div class="d-flex">
-                        <ul class="navbar-nav" id="nav-menu">
-                            <li class="nav-item"><a class="nav-link" href="#banner">首頁</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#banner2">關於我</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#banner3">聯絡我</a></li>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#banner2">關於作品</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#banner3">關於我</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#banner4">聯絡我</a></li>
                         </ul>
                     </div>
                 </div>  
             </nav>
-        </div>
+        </header>
         <section class="bg-img" id="banner"> <!--背景圖-->
-            <div class="container"> <!--內容-->
-                <div class="row banner-text">
-                    <div class="col-sm-12"> <!--內容文字-->
-                        <h1 class="col-md-8">LalaFall.Club</h1>
-                        <p>Free Company Recruit!</p>
-                        <a href="#banner2" class="btn-1">了解更多!</a>
-                    </div>
+            <div class="container"><!--內容左右置中-->
+                <div class="col-sm-12">
+                    <h1 class="col-md-7">第一個簡易網站</h1>
+                    <p>這是個簡易的RWD網頁</p>
+                    <a href="#banner2" class="btn">了解更多!</a>
                 </div>
             </div>
         </section>
     
-        <div class="container2 bg-img" id="banner2"><!--錨點-->
+        <section class="bg-img" id="banner2"><!--錨點-->
         
-        </div>
-        <div class="container3 bg-img" id="banner3">
+        </section>
+        <section class="bg-img" id="banner3">
         
-        </div>
+        </section>
   </body>
 </html>

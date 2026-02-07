@@ -5,6 +5,35 @@ html{
   body{
     margin:0px;
   }
+
+  /*--導覽列--*/
+  .sticky-top{
+    position: sticky;
+  }
+  .navbar {
+    background-color: rgba(44, 44, 44, 0.9);
+  }
+  .navbar-brand{
+    color: #F5E9CF;
+  }
+  .navbar-nav{
+    flex-direction:row;
+    gap:1rem;
+  }
+  .nav-link{
+    color: #F5E9CF;
+  }
+
+  /*--導覽列hover狀態--*/
+  .navbar-brand:hover{
+    color: #e98a3c;
+  }
+  .nav-link:hover{
+    color: #e98a3c;
+  }
+  
+
+  /*第一段落內容*/
   .bg-img{
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,35 +42,28 @@ html{
   }
   #banner{
     background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/1.jpg");
-    background-position:70% center; 
+    background-position:70% center;
+    height: 100dvh;
   }
   #banner .container{
     position: relative;
-    top:40%;
+    top:50%;
+    transform: translateY(-50%);
   }
-  .container2{
-    background-image:linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/2.jpg");
-    background-position:30% center;
-  }
-  .container3{
-    background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/3.jpg");
-    background-position:45% center;
-  }
-  .banner-text{
+  #banner h1{
     color:#F5E9CF;
-    width:100%;
-  }
-  .banner-text h1{
     border-bottom:solid 2px #e98a3c;
-    font-size:4rem;
+    font-size:3rem;
+    font-weight:600;
     padding:0% 5%;
   }
-  .banner-text p{
+  #banner p{
+    color:#F5E9CF;
     padding-left:10%;
     margin-bottom:5dvh;
     font-size:2rem;
   }
-  .btn-1{
+  #banner .btn{
     color:#F5E9CF;
     font-size:1.5rem;
     border:solid 2px #e98a3c;
@@ -53,37 +75,14 @@ html{
     overflow: hidden;
     position: relative;
   }
-  .navbar {
-    background-color: #4e4e4e;
-  }
-  .navbar-brand{
-    color: #F5E9CF;
-  }
-  #nav-menu{
-    flex-direction:row;
-  }
-  .nav-link{
-    color: #F5E9CF;
-    margin-right:1rem;
-  }
-  .navbar-brand:hover{
-    color: #e98a3c;
-  }
-  .nav-link:hover{
-    color: #e98a3c;
-    margin-right:1rem;
-  }
-  .sticky-top{
-    position: sticky;
-  }
-  .btn-1:hover{
+  #banner .btn:hover{
     color:#F5E9CF;
   }
-  .btn-1::after{
+  #banner .btn::after{
     content: "";
     position: absolute;
     top:0;
-    left: 0;
+    left:0;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -93,7 +92,20 @@ html{
     transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
     transform: scaleX(0);
   }
-  .btn-1:hover::after{
+  #banner .btn:hover::after{
       transform: scaleX(1);
   }
-    
+
+  /*第二段落內容*/
+  #banner2{
+    background-image:linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/2.jpg");
+    background-position:30% center;
+    height: 100dvh;
+  }
+
+  /*第三段落內容*/
+  #banner3{
+    background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/3.jpg");
+    background-position:45% center;
+    height: 100dvh;
+  }
