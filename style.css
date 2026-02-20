@@ -5,7 +5,14 @@ html{
   body{
     margin:0px;
   }
-
+  /* 內文及標題字體大小 */
+  h1{
+    font-size:2.5rem;
+    font-weight:600;
+  }
+  p{
+    font-size:1.1rem;
+  }
   /*--導覽列--*/
   .sticky-top{
     position: sticky;
@@ -100,12 +107,48 @@ html{
   #banner2{
     background-image:linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/2.jpg");
     background-position:30% center;
-    height: 100dvh;
+  }
+  #banner2 .container{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+  }
+  #sec2-content{
+    background:rgba(245, 233, 207,0.8);
+    border-radius: 1rem;
   }
 
   /*第三段落內容*/
   #banner3{
     background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/3.jpg");
     background-position:45% center;
-    height: 100dvh;
+    height: 120dvh;
+  }
+  #banner3 .container{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+  }
+  #banner3 .title{
+    margin-bottom: 1rem;
+    color:rgba(245, 233, 207,0.8);
+  }
+  #banner3 .col-md-5{
+    background:rgba(245, 233, 207,0.8);
+    border-radius: 1rem;
+    margin-bottom: 8.333%;
+  }
+  #banner3 .col-md-5 h1{
+    border-bottom:solid 1px #e98a3c;
+  }
+
+  #banner3 .col-md-5 ul{
+    text-align:left;
+    font-size:1.1rem;
+  }
+  #education p{
+    margin:0;
+    font-size:1.2rem;
+    align-content: center;      
+    flex-wrap: wrap;
   }
