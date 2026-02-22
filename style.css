@@ -16,6 +16,20 @@ html{
   /*--導覽列--*/
   .sticky-top{
     position: sticky;
+    animation-name: navbar; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s; /* 延遲0.5秒開始動畫 */
+  }
+  @keyframes navbar {
+    0% {
+      opacity: 0;
+      transform: translateX(0%) translateY(-20%) scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%) translateY(0%) scale(1);
+    }
   }
   .navbar {
     background-color: rgba(44, 44, 44, 0.8);
@@ -118,6 +132,20 @@ html{
     position: relative;
     top:50%;
     transform: translateY(-50%);
+    animation-name: sec1; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s; /* 延遲0.5秒開始動畫 */
+  }
+  @keyframes sec1 {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-50%) scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%) translateY(-50%) scale(1);
+    }
   }
   #banner h1{
     color:#F5E9CF;
@@ -174,6 +202,20 @@ html{
     position: relative;
     top:50%;
     transform: translateY(-50%);
+    animation-name: sec2; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s; /* 延遲0.5秒開始動畫 */
+  }
+  @keyframes sec2 {
+    0% {
+      opacity: 0;
+      transform: translateX(100%) translateY(-50%) scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%) translateY(-50%) scale(1);
+    }
   }
   #sec2-content{
     background:rgba(245, 233, 207,0.8);
@@ -202,6 +244,20 @@ html{
     position: relative;
     top:50%;
     transform: translateY(-50%);
+    animation-name: sec3; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s; /* 延遲0.5秒開始動畫 */
+  }
+  @keyframes sec3 {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-50%) scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%) translateY(-50%) scale(1);
+    }
   }
   #banner3 .title{
     margin-bottom: 1rem;
