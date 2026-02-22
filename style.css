@@ -18,26 +18,45 @@ html{
     position: sticky;
   }
   .navbar {
-    background-color: rgba(44, 44, 44, 0.9);
+    background-color: rgba(44, 44, 44, 0.8);
   }
-  .navbar-brand{
+  .nav-container{
+    border-right: 5px solid #e98a3c;
+  }
+  .nav{
     color: #F5E9CF;
+    position: relative;
+    font-weight: 550;
   }
   .navbar-nav{
     flex-direction:row;
     gap:1rem;
-  }
-  .nav-link{
-    color: #F5E9CF;
+    
   }
 
   /*--導覽列hover狀態--*/
-  .navbar-brand:hover{
-    color: #e98a3c;
+  .nav:hover{
+    color: #F5E9CF;
   }
-  .nav-link:hover{
-    color: #e98a3c;
+  .nav::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #e98a3c;
+    transition: 0.5s;
   }
+  .nav:hover::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 75%;
+    height: 2px;
+    background-color: rgb(230, 127, 31);
+    transition: 0.5s;
+  }
+  
   
 
   /*第一段落內容*/
@@ -48,7 +67,7 @@ html{
     width: 100%;
   }
   #banner{
-    background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/1.jpg");
+    background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/bg1.jpg");
     background-position:70% center;
   }
   #banner .container{
@@ -104,7 +123,7 @@ html{
 
   /*第二段落內容*/
   #banner2{
-    background-image:linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/2.jpg");
+    background-image:linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/bg2.jpg");
     background-position:30% center;
   }
   #banner2 .container{
@@ -116,10 +135,20 @@ html{
     background:rgba(245, 233, 207,0.8);
     border-radius: 1rem;
   }
+  .code-pic{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .code-pic img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block; 
+  }
 
   /*第三段落內容*/
   #banner3{
-    background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/3.jpg");
+    background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/bg3.jpg");
     background-position:45% center;
     height: 120dvh;
   }
@@ -150,4 +179,12 @@ html{
     font-size:1.2rem;
     align-content: center;      
     flex-wrap: wrap;
+  }
+  /* 頁尾 */
+  footer{
+    background-color: rgba(44, 44, 44, 0.9);
+    color:#F5E9CF;
+    font-weight: 300;
+    text-align: center;
+    padding: 0.5rem;
   }

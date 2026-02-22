@@ -22,13 +22,7 @@
             }
             @media screen and (max-width:767px){
                 #banner{
-                    background-image:linear-gradient(to top, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/1stphone.jpg");
-                }
-                #banner2{
-                    background-image:linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/2ndphone.jpg");
-                }
-                #banner3{
-                    background-image:linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/3rdphone.jpg");
+                    background-image:linear-gradient(to top, rgba(0,0,0,0),rgba(0,0,0,0.8)),url("img/bg1.jpg");
                 }
                 /* 調整首頁排版 */
                 #banner .container{
@@ -41,6 +35,7 @@
                 html{
                     font-size:14px;
                 }
+                /* 調整學歷內容排版 */
                 #education .row{
                     justify-content:space-around;
                 }
@@ -64,13 +59,13 @@
     <body>
         <header class="sticky-top"> <!--導覽列-->
             <nav class="navbar navbar-expand-lg">
-                <div class="container"> <!--導覽列內容-->
-                    <a class="navbar-brand" href="#">回到首頁</a>
+                <div class="container nav-container"> <!--導覽列內容-->
+                    <a class="navbar-brand nav" href="#">回到首頁</a>
                     <div class="d-flex">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="#banner2">關於作品</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#sec2">關於我</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#banner4">聯絡我</a></li>
+                            <li class="nav-item"><a class="nav-link nav" href="#banner2">關於作品</a></li>
+                            <li class="nav-item"><a class="nav-link nav" href="#sec2">關於我</a></li>
+                            <li class="nav-item"><a class="nav-link nav" href="#banner4">聯絡我</a></li>
                         </ul>
                     </div>
                 </div>  
@@ -90,14 +85,16 @@
                 <div class="row">
                     <div class="col-md-7 offset-md-5 text-center" id="sec2-content">
                         <h1>- 關於作品 -</h1>
-                        <img src="img/2nd.jpg" alt="關於作品圖片">
+                        <div class="code-pic">
+                            <img src="img/code.jpg" alt="關於作品圖片">
+                        </div>
                         <p>這是利用Bootstrap製作的簡易RWD網頁<br>此作品從網頁設計、切版排版到最終網頁呈現，皆由自己獨力完成。</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="bg-img" id="banner3"> <!--關於我背景圖-->
-            <div id="sec2"></div>
+            <div id="sec2"></div><!--錨點-->
             <div class="container"><!--內容上下置中-->
                 <div class="row col-md-8">
                     <div class="col-md-11 text-center title" id="sec3-content">
@@ -140,8 +137,8 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <p class="text-center">Copyright © 2024 by 110-1網頁設計期末作品</p>
+        <footer> <!--頁尾-->
+            <p class="text-center">Copyright © 2026 by DunjieYang On Github Page</p>
         </footer>
   </body>
 </html>
