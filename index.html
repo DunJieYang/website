@@ -8,8 +8,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
         
-        <!-- 引入自訂css -->
+        <!-- 引入自訂css js -->
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
         <style>
             @media screen and (max-width:991px){
                 /* 調整學歷內容大小 避免跑版 */
@@ -57,6 +58,25 @@
         </style>
     </head>
     <body>
+        <div id="myModal" class="modal fade" aria-hidden="true"> <!--聯絡我彈跳視窗-->
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <h2>感謝您聯絡我！</h2>
+                    <div class="row">
+                        <div class="col-4">
+                            <strong>電話:</strong><br>
+                            <strong>電子郵件:</strong>
+                        </div>
+                        <div class="col-8">
+                            0909-501-570<br>
+                            Dunjieyang5207@gmail.com
+                        </div>
+                    </div>
+                    <p>我會盡快回覆您的訊息，謝謝！</p>
+                    <button class="close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                </div>
+            </div>
+        </div>
         <header class="sticky-top"> <!--導覽列-->
             <nav class="navbar navbar-expand-lg">
                 <div class="container nav-container"> <!--導覽列內容-->
@@ -65,7 +85,7 @@
                         <ul class="navbar-nav">
                             <li class="nav-item"><a class="nav-link nav" href="#banner2">關於作品</a></li>
                             <li class="nav-item"><a class="nav-link nav" href="#sec2">關於我</a></li>
-                            <li class="nav-item"><a class="nav-link nav" href="#banner4">聯絡我</a></li>
+                            <li class="nav-item"><button class="nav" id="nav-btn" data-bs-toggle="modal" data-bs-target="#myModal">聯絡我</button></li>
                         </ul>
                     </div>
                 </div>  
@@ -140,5 +160,6 @@
         <footer> <!--頁尾-->
             <p class="text-center">Copyright © 2026 by DunjieYang On Github Page</p>
         </footer>
+        
   </body>
 </html>

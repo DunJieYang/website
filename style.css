@@ -30,8 +30,15 @@ html{
   }
   .navbar-nav{
     flex-direction:row;
-    gap:1rem;
-    
+    gap:2rem;
+    align-items: center
+  }
+  #nav-btn{
+    position: relative;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 8px;
   }
 
   /*--導覽列hover狀態--*/
@@ -57,7 +64,42 @@ html{
     transition: 0.5s;
   }
   
-  
+  /*聯絡我 彈窗*/
+  .modal-dialog{
+    margin: 15% auto;/* 垂直置中 */
+  }
+  .modal-content {
+    color: #F5E9CF;
+    background-color: #4b4b4b;
+    padding: 20px;
+    width: 100%; 
+    max-width: 500px; 
+    border-radius: 10px;
+  }
+  .modal-content h2{
+    margin-bottom: 2rem;
+  }
+  .modal-content p{
+    margin-top: 2rem;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #F5E9CF;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  .close:hover,
+  .close:focus {
+    color: #e76e6e;               
+    text-decoration: none;
+    cursor: pointer;
+  }
 
   /*第一段落內容*/
   .bg-img{
@@ -188,3 +230,4 @@ html{
     text-align: center;
     padding: 0.5rem;
   }
+  
